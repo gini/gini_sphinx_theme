@@ -1,5 +1,5 @@
 // Logo on the top.
-.gini-logo:before{
+.gini-logo:before {
     display: inline-block;
     content: $icon-logo;
     font-family: 'Gini Icons';
@@ -10,6 +10,38 @@
 }
 
 // Nice menu.
-.wy-menu .toctree-l3{
+.wy-menu .toctree-l3 {
     margin-left: 2em;
+}
+
+// Nicer ToDos.
+.admonition-todo {
+    background-color: rgba(255, 0, 0, 0.3);
+    border-left: 3px solid rgba(255, 0, 0, 0.5);
+    padding: 24px;
+}
+
+// No unnecessary scrollbars on the tables.
+.wy-table-responsive table td {
+    white-space: normal;
+}
+
+// Nicer headings.
+.section h2 {
+    margin-top: 3.5em;
+}
+
+.headerlink {
+    font-size: 1em;
+    margin-left: 1em;
+    font-family: $base-font-family;
+    display: none;
+}
+
+h1, h2, h3, h4 {
+    &:hover {
+        .headerlink {
+            display: inline-block;
+        }
+    }
 }
