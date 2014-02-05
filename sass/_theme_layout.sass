@@ -61,7 +61,7 @@
     border: none
     border-bottom: solid 1px darken($section-background-color, 20%)
     border-top: solid 1px darken($section-background-color, 20%)
-    padding-left: $gutter -4px
+    padding-left: $gutter - ((4px / $base-font-size) * 1em)
     +font-smooth
     &:hover
       background: $section-background-color

@@ -1,0 +1,10 @@
+// Logo on the top.
+.gini-logo:before{
+    display: inline-block;
+    content: $icon-logo;
+    font-family: 'Gini Icons';
+    font-size: 2em;
+    line-height: 0.5em;
+    vertical-align: bottom;
+    font-weight: normal;
+}
