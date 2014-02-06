@@ -4,7 +4,7 @@
 
 #path = File.dirname(__FILE__)
 
-project_path = "sphinx_rtd_theme/static"
+project_path = "gini_sphinx_theme/static"
 http_path = "static"
 sass_path = "sass"
 
