@@ -1,12 +1,17 @@
-// Logo on the top.
-.gini-logo:before {
-    display: inline-block;
-    content: $icon-logo;
-    font-family: 'Gini Icons';
-    font-size: 2em;
-    line-height: 0.5em;
-    vertical-align: bottom;
-    font-weight: normal;
+// Logo
+#gini-logo{
+    display: block;
+    font-size: 0;
+    background-image: url('../giniAPI.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include background-size(contain);
+    height: $base-font-size * 3;
+    margin-bottom: $base-font-size;
+
+    &:hover{
+        background-color: transparent;
+    }
 }
 
 // Nice menu.
