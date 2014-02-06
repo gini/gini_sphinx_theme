@@ -23,7 +23,7 @@ module.exports = function(grunt) {
       fonts: {
         files: [
           // includes files within path
-          {expand: true, flatten: true, src: ['bower_components/font-awesome/fonts/*'], dest: 'sphinx_rtd_theme/static/fonts/', filter: 'isFile'}
+          {expand: true, flatten: true, src: ['bower_components/font-awesome/fonts/*'], dest: 'gini_sphinx_theme/static/fonts/', filter: 'isFile'}
         ]
       }
     },
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
     },
     clean: {
       build: ["demo_docs/build"],
-      fonts: ["sphinx_rtd_theme/static/fonts"]
+      fonts: ["gini_sphinx_theme/static/fonts"]
     },
 
     watch: {
@@ -65,7 +65,7 @@ module.exports = function(grunt) {
       },
       /* Changes in theme dir rebuild sphinx */
       sphinx: {
-        files: ['sphinx_rtd_theme/**/*', 'demo_docs/**/*.rst', 'demo_docs/**/*.py'],
+        files: ['gini_sphinx_theme/**/*', 'demo_docs/**/*.rst', 'demo_docs/**/*.py'],
         tasks: ['clean:build','exec:build_sphinx']
       },
       /* live-reload the demo_docs if sphinx re-builds */
