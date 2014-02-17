@@ -107,7 +107,8 @@ html_theme = 'gini_sphinx_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    # 'sticky_navigation' : True  # Set to False to disable the sticky nav while scrolling.
+    # 'sticky_navigation' : True      # Set to False to disable the sticky nav while scrolling.
+    # 'google_analytics_id': 'UA-XXX' # Set to a valid tracking ID to enable Google Analytics tracking
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
